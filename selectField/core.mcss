@@ -1,0 +1,36 @@
+// Component:       `u-selectField`
+// ========================================================================
+
+.u-selectField {
+    $user-select: none;
+    // - 防止selectField在文字为空时飘起来
+    // vertical-align: bottom;
+
+    .overlay_hd {
+        $box-sizing: border-box;
+        cursor: pointer;
+        @extend .f-toe;
+
+        .u-icon {
+            position: absolute;
+            right: 10px;
+        }
+    }
+
+    .overlay_bd {
+        clear: both;
+        width: 100%;
+    }
+
+    .m-listView {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+/* Disabled */
+.u-selectField.z-dis {
+    .overlay_hd {
+        cursor: not-allowed;
+    }
+}

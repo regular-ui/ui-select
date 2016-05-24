@@ -1,0 +1,18 @@
+{
+  "name": "regular-ui-select",
+  "description": "Regular UI - SelectField",
+  "version": "0.2.0",
+  "author": "Rainfore <rainforest92@126.com>",
+  "main": "./index.js",
+  "repository": "regular-ui/ui-select",
+  "homepage": "http://regular-ui.github.io",
+  "bugs": {"url": "http://github.com/regular-ui/ui-select/issues"},
+  "license": "MIT",
+  "keywords": ["regular", "ui", "select"],
+  "tags": ["regular", "ui", "select"],
+  "dependencies": {
+    "regular-ui-base": "regular-ui/ui-base#feature/v0.2",
+    "regular-ui-overlay": "regular-ui/ui-overlay#master",
+    "regular-ui-listview": "regular-ui/ui-listview#master"
+  }
+}

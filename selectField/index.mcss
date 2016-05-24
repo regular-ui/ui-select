@@ -1,0 +1,36 @@
+@import './core.mcss';
+
+// Component:       `u-selectField`
+// ========================================================================
+
+.u-selectField {
+    width: $field_width;
+
+    .overlay_hd {
+        height: $field_height;
+        line-height: $field_height - 2;
+        padding-left: index($field_padding, 1);
+        padding-right: 28px;
+        background: $field_background;
+        color: $field_color;
+        $border: $field_border;
+        $border-radius: $border-radius-base;
+    }
+
+    .overlay_bd {
+        margin-top: 2px;
+    }
+
+    .m-listView {
+        max-height: 200px;
+    }
+}
+
+/* Disabled */
+.u-selectField.z-dis {
+    .overlay_hd {
+        background: $field-disabled_background;
+        $border: $field-disabled_border;
+        color: $field-disabled_color;
+    }
+}

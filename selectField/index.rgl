@@ -1,0 +1,11 @@
+<overlay class="u-selectField" open={open} disabled={disabled} visible={visible} ref="overlay" on-toggle={this._onToggle($event)}>
+    <overlay.head>
+        <span>{#if this.$refs.listView.selected}{#inc this.$refs.listView.selected.$body}{/if}</span>
+        <i class="u-icon u-icon-caret-down"></i>
+    </overlay.head>
+    <overlay.body>
+        <listView value={value} readonly={readonly} disabled={disabled} ref="listView" on-select={this._onSelect($event)} on-change={this._onChange($event)}>
+            {#inc this.$body}
+        </listView>
+    </overlay.body>
+</overlay>
