@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<!-- 该文件由rgui-tools自动生成 -->
+<meta charset="utf-8">
+<title>Regular UI</title>
+<meta name="author" content="Rainfore">
+<meta name="keywords" content="Regular,UI,JavaScript,Framework,MVC,MVVM">
+<meta name="description" content="Regular UI">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="icon" href="http://regular-ui.github.io/img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://regular-ui.github.io/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://regular-ui.github.io/css/doc.default.min.css">
+<link rel="stylesheet" href="../css/index.css">
+<!--[if lt IE9]>
+<script>
+(function() {
+    if (!
+    /*@cc_on!@*/
+    0) return;
+    var e = 'abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video'.split(', ');
+    var i= e.length;
+    while (i--)
+        document.createElement(e[i]);
+})();
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="g-top g-top-fixed">
+    <div class="g-topc">
+        <a class="u-logo" href="./"><h1>Regular UI</h1></a>
+    </div>
+</div>
+<div class="g-bd"><div class="g-bdc"><div class="g-mn">
+    <article class="m-article">
+        <h3 id="-">示例</h3>
+<h4 id="-">基本形式</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<h4 id="value-selected">value和selected</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">1</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">1</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<h4 id="-">禁用某一项，禁用组件</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3（禁用）<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3（禁用）<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<h4 id="-">分隔线</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">divider</span> <span class="cm-tagcm-bracketcm-error">/&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3（禁用）<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<h4 id="-">自定义</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    {#list list as item}
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">{item}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;title&quot;</span><span class="cm-tagcm-bracket">&gt;</span>{item.language}<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;hits f-fr&quot;</span><span class="cm-tagcm-bracket">&gt;</span>{item.ratings}%<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    {/list}
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre class="lang-javascript"><code><span class="cm-keyword">var</span> <span class="cm-variable">component</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">RGUI</span>.<span class="cm-property">Component</span>({
+    <span class="cm-property">template</span>: <span class="cm-variable">template</span>,
+    <span class="cm-property">data</span>: {
+        <span class="cm-property">list</span>: [
+            {<span class="cm-property">language</span>: <span class="cm-string">&#39;Java&#39;</span>, <span class="cm-property">ratings</span>: <span class="cm-number">20.9</span>},
+            {<span class="cm-property">language</span>: <span class="cm-string">&#39;C&#39;</span>, <span class="cm-property">ratings</span>: <span class="cm-number">13.2</span>},
+            {<span class="cm-property">language</span>: <span class="cm-string">&#39;C++&#39;</span>, <span class="cm-property">ratings</span>: <span class="cm-number">6.7</span>},
+            {<span class="cm-property">language</span>: <span class="cm-string">&#39;Python&#39;</span>, <span class="cm-property">ratings</span>: <span class="cm-number">3.8</span>},
+            {<span class="cm-property">language</span>: <span class="cm-string">&#39;JavaScript&#39;</span>, <span class="cm-property">ratings</span>: <span class="cm-number">2.3</span>}
+        ]
+    }
+});
+</code></pre>
+<h4 id="-">数据绑定</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">{value}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">1</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>当前选择值：{value + &#39;&#39;}<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<h4 id="-">事件</h4>
+<p>请打开浏览器的控制台查看结果。</p>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">{value}</span>
+    <span class="cm-attribute">on-toggle</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-toggle:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event.open:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event.open)}</span>
+    <span class="cm-attribute">on-select</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-select:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event)}</span>
+    <span class="cm-attribute">on-change</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-change:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event.value:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event.value)}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">1</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+
+    </article>
+</div>
+</div></div><div class="g-ft">
+    <footer class="m-footer">
+        <p><a href="http://regular-ui.github.io/" class="footer_logo"><img src="http://regular-ui.github.io/img/logo-v2.0-bg-48.png" /></p>
+        <p>
+            <a href="https://github.com/regular-ui/regular-ui" target="_blank">GitHub</a> |
+            <a href="https://github.com/regular-ui/regular-ui/issues" target="_blank">Issues</a> |
+            <a href="https://github.com/regular-ui/regular-ui/releases" target="_blank">ChangeLog</a> |
+            <a href="https://github.com/regular-ui/regular-ui/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a>
+        </p>
+        <p>Licensed under <a href="https://github.com/regular-ui/regular-ui/blob/master/LICENSE" target="_blank">MIT license</a>.</p>
+    </footer>
+</div>
+<script src="http://regular-ui.github.io/vendor/regular.min.js"></script>
+<script src="../js/index.js"></script>
+<script>
+var $$ = function(selector){return document.querySelectorAll(selector)};
+</script>
+<script>
+"use strict";
+
+var index = 0;
+(function (index) {
+    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField value=2>\n    <item>请选择</item>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3>选项3</item>\n</selectField>\n<selectField>\n    <item>请选择</item>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>\n<selectField disabled>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item divider />\n    <item disabled>选项3（禁用）</item>\n</selectField>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField>\n    {#list list as item}\n    <item value={item}>\n        <span class=\"title\">{item.language}</span>\n        <span class=\"hits f-fr\">{item.ratings}%</span>\n    </item>\n    {/list}\n</selectField>";
+    var component = new RGUI.Component({
+        template: template,
+        data: {
+            list: [{ language: 'Java', ratings: 20.9 }, { language: 'C', ratings: 13.2 }, { language: 'C++', ratings: 6.7 }, { language: 'Python', ratings: 3.8 }, { language: 'JavaScript', ratings: 2.3 }]
+        }
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField value={value}>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>\n<div>当前选择值：{value + ''}</div>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField value={value}\n    on-toggle={console.log('on-toggle:', '$event.open:', $event.open)}\n    on-select={console.log('on-select:', '$event:', $event)}\n    on-change={console.log('on-change:', '$event.value:', $event.value)}>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component.$inject($$(".m-example")[index]);
+})(index++);
+</script>
+</body>
+</html>
