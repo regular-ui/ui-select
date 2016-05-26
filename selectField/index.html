@@ -43,6 +43,12 @@
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
 </code></pre>
 <h4 id="value-selected">value和selected</h4>
 <div class="m-example"></div>
@@ -64,11 +70,13 @@
 <div class="m-example"></div>
 
 <pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3（禁用）<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3（禁用）<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
@@ -157,7 +165,7 @@ var $$ = function(selector){return document.querySelectorAll(selector)};
 
 var index = 0;
 (function (index) {
-    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>";
+    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>\n<selectField>\n    <item>请选择</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
@@ -171,7 +179,7 @@ var index = 0;
     component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>\n<selectField disabled>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>";
+    var template = "<selectField>\n    <item>请选择</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>\n<selectField disabled>\n    <item>请选择</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
