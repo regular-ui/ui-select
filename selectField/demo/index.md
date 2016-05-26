@@ -9,6 +9,12 @@
     <item>选项2</item>
     <item>选项3</item>
 </selectField>
+<selectField>
+    <item>请选择</item>
+    <item>选项1</item>
+    <item>选项2</item>
+    <item>选项3</item>
+</selectField>
 ```
 
 
@@ -37,11 +43,13 @@
 
 ```xml
 <selectField>
+    <item>请选择</item>
     <item>选项1</item>
     <item>选项2</item>
     <item disabled>选项3（禁用）</item>
 </selectField>
 <selectField disabled>
+    <item>请选择</item>
     <item>选项1</item>
     <item>选项2</item>
     <item disabled>选项3（禁用）</item>

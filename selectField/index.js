@@ -1,4 +1,4 @@
-import {Component} from 'regular-ui-base';
+import {Component} from 'rgui-base';
 import template from './index.rgl';
 
 /**
@@ -19,27 +19,27 @@ let SelectField = Component.extend({
      * @protected
      */
     config() {
-        this.list = [];
-        this.selected = undefined;
         this.data = Object.assign({
+            _list: [],
+            _selected: undefined,
             value: undefined,
             placeholder: '请选择',
-            open: undefined
+            open: undefined,
         }, this.data);
         this.supr();
     },
-    /**
-     * @protected
-     */
     init() {
-        // 将item的操作权移交给listView
-        var listView = this.$refs.listView;
-        this.list.forEach((item) => item.$context = listView);
-        listView.list = this.list;
-        listView.selected = this.selected || this.list[0];
-        this.list = [];
-        this.selected = undefined;
-        this.supr();
+        if(!this.data._selected)
+            this.data._selected = this.data._list[0];
+    },
+    /**
+     * @method select(item) 选择某一项
+     * @public
+     * @param  {Item} item 选择项
+     * @return {void}
+     */
+    select(item) {
+        this.$refs.listView.select(item);
     },
     /**
      * @private

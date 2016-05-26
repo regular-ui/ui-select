@@ -1,5 +1,5 @@
 {
-  "name": "regular-ui-select",
+  "name": "rgui-select",
   "description": "Regular UI - SelectField",
   "version": "0.2.0",
   "author": "Rainfore <rainforest92@126.com>",
@@ -11,8 +11,8 @@
   "keywords": ["regular", "ui", "select"],
   "tags": ["regular", "ui", "select"],
   "dependencies": {
-    "regular-ui-base": "regular-ui/ui-base#feature/v0.2",
-    "regular-ui-overlay": "regular-ui/ui-overlay#master",
-    "regular-ui-listview": "regular-ui/ui-listview#master"
+    "rgui-base": "regular-ui/ui-base#feature/v0.2",
+    "rgui-overlay": "regular-ui/ui-overlay#master",
+    "rgui-listview": "regular-ui/ui-listview#master"
   }
 }
