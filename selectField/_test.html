@@ -27,14 +27,15 @@
 <![endif]-->
 </head>
 <body>
-<div class="g-top g-top-fixed">
+<div class="g-top">
     <div class="g-topc">
-        <a class="u-logo" href="./"><h1>Regular UI</h1></a>
+        <a class="u-logo" href="./">Regular UI</a>
     </div>
 </div>
-<div class="g-bd"><div class="g-bdc"><div class="g-mn">
+<div class="g-bd"><div class="g-bdc"><div class="g-mn g-mn-center">
     <article class="m-article">
-        <h4 id="test">Test</h4>
+        <h1>选择扩展<small> SelectField</small></h1>
+        <h3 id="test">Test</h3>
 <div class="m-example"></div>
 
 <pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">{value}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
@@ -74,6 +75,7 @@ value={value}
 });
 </code></pre>
 
+        
     </article>
 </div>
 </div></div><div class="g-ft">
@@ -92,6 +94,9 @@ value={value}
 <script src="../js/index.js"></script>
 <script>
 var $$ = function(selector){return document.querySelectorAll(selector)};
+$$('.m-article > h2, .m-article > h3').forEach(function($heading) {
+    $heading.innerHTML = '<a href="#' + $heading.id + '">' + $heading.innerText + '</a>';
+});
 </script>
 <script>
 'use strict';
@@ -108,7 +113,7 @@ var index = 0;
             this.data.list = [{ course: 'Test1' }, { course: 'Test2' }, { course: 'Test3' }];
         }
     });
-    component.$inject($$(".m-example")[index]);
+    component && component.$inject($$(".m-example")[index]);
 })(index++);
 </script>
 </body>
