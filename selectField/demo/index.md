@@ -1,5 +1,5 @@
-### 示例
-#### 基本形式
+## 示例
+### 基本形式
 
 <div class="m-example"></div>
 
@@ -18,7 +18,7 @@
 ```
 
 
-#### value和selected
+### value和selected
 
 <div class="m-example"></div>
 
@@ -37,7 +37,7 @@
 </selectField>
 ```
 
-#### 禁用某一项，禁用组件
+### 禁用某一项，禁用组件
 
 <div class="m-example"></div>
 
@@ -56,7 +56,7 @@
 </selectField>
 ```
 
-#### 分隔线
+### 分隔线
 
 <div class="m-example"></div>
 
@@ -69,7 +69,7 @@
 </selectField>
 ```
 
-#### 自定义
+### 自定义
 
 <div class="m-example"></div>
 
@@ -99,7 +99,7 @@ var component = new RGUI.Component({
 });
 ```
 
-#### 数据绑定
+### 数据绑定
 
 <div class="m-example"></div>
 
@@ -112,7 +112,7 @@ var component = new RGUI.Component({
 <div>当前选择值：{value + ''}</div>
 ```
 
-#### 事件
+### 事件
 
 请打开浏览器的控制台查看结果。
 
