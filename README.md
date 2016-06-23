@@ -2,11 +2,9 @@
 
 Regular UI - SelectField
 
-## SelectField
+## SelectField（选择扩展）
 
-选择扩展
-
-Demo: http://regular-ui.github.io/ui-select/selectField/index.html
+- 基础示例+API: https://regular-ui.github.io/ui-select/selectField/index.html
 
 ## Copyright and License
 
