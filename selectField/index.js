@@ -14,9 +14,10 @@ import template from './index.rgl';
  */
 let SelectField = Component.extend({
     name: 'selectField',
-    template: template,
+    template,
     /**
      * @protected
+     * @override
      */
     config() {
         this.data = Object.assign({
@@ -28,6 +29,10 @@ let SelectField = Component.extend({
         }, this.data);
         this.supr();
     },
+    /**
+     * @protected
+     * @override
+     */
     init() {
         if(!this.data._selected)
             this.data._selected = this.data._list[0];
