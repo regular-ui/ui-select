@@ -3,5 +3,7 @@ npm-debug.log
 .DS_Store
 .rgui-cache
 .sass-cache
+__*
 /tmp
 /doc
+/test-reports
