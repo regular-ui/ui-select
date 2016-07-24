@@ -1,13 +1,11 @@
-<overlay class="u-selectField" open={open} disabled={disabled} visible={visible} ref="overlay" on-toggle={this._onToggle($event)}>
+<overlay ref="overlay" class="u-selectField {class}" open={open} disabled={disabled} visible={visible} on-toggle="toggle">
     <overlay.head>
-        <span>{#if this.$refs.listView.data._selected}
-            {#inc this.$refs.listView.data._selected.$body}
-        {/if}</span>
+        <span>{#if _selected}{#inc _selected.$body}{/if}</span>
         <i class="u-icon u-icon-caret-down"></i>
     </overlay.head>
     <overlay.body>
-        <listView class="m-listView-selectField" _list={_list} _selected={_selected} value={value} readonly={readonly} disabled={disabled} ref="listView" on-select={this._onSelect($event)} on-change={this._onChange($event)}>
+        <ul class="m-listView selectField_listView">
             {#inc this.$body}
-        </listView>
+        </ul>
     </overlay.body>
 </overlay>
