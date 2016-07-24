@@ -8,8 +8,8 @@
   "homepage": "http://regular-ui.github.io",
   "bugs": {"url": "http://github.com/regular-ui/ui-select/issues"},
   "license": "MIT",
-  "keywords": ["regular", "ui", "select"],
-  "tags": ["regular", "ui", "select"],
+  "keywords": ["regular", "ui", "rgui", "select"],
+  "tags": ["regular", "ui", "rgui", "select"],
   "dependencies": {
     "rgui-ui-base": "0.2.0-alpha.2",
     "rgui-ui-overlay": "regular-ui/ui-overlay#master",
