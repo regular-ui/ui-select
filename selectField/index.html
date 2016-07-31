@@ -3,14 +3,14 @@
 <head>
 <!-- 该文件由rgui-tools自动生成 -->
 <meta charset="utf-8">
-<title>Regular UI</title>
+<title>Regular UI - SelectField</title>
 <meta name="author" content="Rainfore">
 <meta name="keywords" content="Regular,UI,JavaScript,Framework,MVC,MVVM">
 <meta name="description" content="Regular UI">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<link rel="icon" href="https://regular-ui.github.io/img/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="https://regular-ui.github.io/img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://regular-ui.github.io/css/doc.default.min.css">
+<link rel="icon" href="https://regular-ui.github.io/v0.2/img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://regular-ui.github.io/v0.2/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://regular-ui.github.io/v0.2/css/doc.default.min.css">
 <link rel="stylesheet" href="../css/index.css">
 <!--[if lt IE9]>
 <script>
@@ -118,15 +118,35 @@
     }
 });
 </code></pre>
+<h3 id="展开方向">展开方向</h3>
+<p>具体请参见<a href="https://regular-ui.github.io/ui-overlay/overlay/index.html#展开方向">Overlay的展开方向</a>。</p>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">direction</span>=<span class="cm-string">&quot;bottom-left&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>bottom-left<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">direction</span>=<span class="cm-string">&quot;top-left&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>top-left<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
 <h3 id="数据绑定">数据绑定</h3>
 <div class="m-example"></div>
 
 <pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">{value}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">1</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
-    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
-    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
-<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>当前选择值：{value + &#39;&#39;}<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tagcm-bracket">&gt;</span>当前选择值：{value}<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;u-btn u-btn-info&quot;</span> <span class="cm-attribute">on-click</span>=<span class="cm-attribute">{value</span> = <span class="cm-string">&#39;1&#39;</span><span class="cm-attribute">}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项第一项<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;u-btn u-btn-info&quot;</span> <span class="cm-attribute">on-click</span>=<span class="cm-attribute">{value</span> = <span class="cm-string">&#39;3&#39;</span><span class="cm-attribute">}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项最后一项<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tagcm-bracket">&gt;</span>
 </code></pre>
 <h3 id="事件">事件</h3>
 <p>请打开浏览器的控制台查看结果。</p>
@@ -134,7 +154,7 @@
 
 <pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">{value}</span>
     <span class="cm-attribute">on-toggle</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-toggle:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event.open:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event.open)}</span>
-    <span class="cm-attribute">on-select</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-select:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event)}</span>
+    <span class="cm-attribute">on-select</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-select:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event.value:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event.value)}</span>
     <span class="cm-attribute">on-change</span>=<span class="cm-attribute">{console.log(</span><span class="cm-stringcm-error">&#39;on-change:&#39;</span><span class="cm-attribute">,</span> <span class="cm-stringcm-error">&#39;$event.value:&#39;</span><span class="cm-attribute">,</span> <span class="cm-attribute">$event.value)}</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">1</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">2</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
@@ -146,7 +166,7 @@
 
 <h3 id="Class">Class</h3>
 <h4>SelectField</h4>
-<p>继承自<strong>Component</strong>。</p>
+<p>继承自<strong>ListView</strong>。</p>
 <p></p>
 <div id="j-class"></div>
 
@@ -161,17 +181,19 @@
             
             <tr><td class="f-wsn"><code>data</code></td><td class="f-wsn">object</td><td class="f-wsn"></td><td class="f-tac"></td><td>绑定属性</td></tr>
             
-            <tr><td class="f-wsn"><code>data.value</code></td><td class="f-wsn">var</td><td class="f-wsn"></td><td class="f-tac">outer &lt;=&gt; inner</td><td>当前的选择值</td></tr>
+            <tr><td class="f-wsn"><code>data.value</code></td><td class="f-wsn">var</td><td class="f-wsn"></td><td class="f-tac">outside &lt;=&gt; inside</td><td>当前的选择值</td></tr>
             
-            <tr><td class="f-wsn"><code>data.open</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outer &lt;=&gt; inner</td><td>当前为展开/收起状态</td></tr>
+            <tr><td class="f-wsn"><code>data.open</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside &lt;=&gt; inside</td><td>当前为展开/收起状态</td></tr>
             
-            <tr><td class="f-wsn"><code>data.readonly</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outer  =&gt; inner</td><td>是否只读</td></tr>
+            <tr><td class="f-wsn"><code>data.direction</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;bottom-left&#39;</code></td><td class="f-tac">outside  =&gt; inside</td><td>展开方向</td></tr>
             
-            <tr><td class="f-wsn"><code>data.disabled</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outer  =&gt; inner</td><td>是否禁用</td></tr>
+            <tr><td class="f-wsn"><code>data.readonly</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否只读</td></tr>
             
-            <tr><td class="f-wsn"><code>data.visible</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>true</code></td><td class="f-tac">outer  =&gt; inner</td><td>是否显示</td></tr>
+            <tr><td class="f-wsn"><code>data.disabled</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否禁用</td></tr>
             
-            <tr><td class="f-wsn"><code>data.class</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;&#39;</code></td><td class="f-tac">outer  =&gt; inner</td><td>补充class</td></tr>
+            <tr><td class="f-wsn"><code>data.visible</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>true</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否显示</td></tr>
+            
+            <tr><td class="f-wsn"><code>data.class</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;&#39;</code></td><td class="f-tac">outside  =&gt; inside</td><td>补充class</td></tr>
             
         
     </tbody>
@@ -218,42 +240,6 @@
     <h3 id="Events">Events</h3>
     
     
-    <h4>selectField.$on('toggle')</h4>
-    <p>展开/收起时触发</p>
-    <table>
-        <thead>
-            <tr><th width="33%">属性</th><th width="33%">类型</th><th width="33%">描述</th></tr>
-        </thead>
-        <tbody>
-            
-                
-                <tr><td class="f-wsn"><code>sender</code></td><td class="f-wsn">object</td><td class="f-wsn">事件发送对象</td></tr>
-                
-                <tr><td class="f-wsn"><code>open</code></td><td class="f-wsn">object</td><td class="f-wsn">展开/收起状态</td></tr>
-                
-            
-        </tbody>
-    </table>
-    
-    
-    <h4>selectField.$on('select')</h4>
-    <p>选择某一项时触发</p>
-    <table>
-        <thead>
-            <tr><th width="33%">属性</th><th width="33%">类型</th><th width="33%">描述</th></tr>
-        </thead>
-        <tbody>
-            
-                
-                <tr><td class="f-wsn"><code>sender</code></td><td class="f-wsn">object</td><td class="f-wsn">事件发送对象</td></tr>
-                
-                <tr><td class="f-wsn"><code>selected</code></td><td class="f-wsn">Item</td><td class="f-wsn">当前的选择项</td></tr>
-                
-            
-        </tbody>
-    </table>
-    
-    
     <h4>selectField.$on('change')</h4>
     <p>选择值改变时触发</p>
     <table>
@@ -273,6 +259,46 @@
         </tbody>
     </table>
     
+    
+    <h4>selectField.$on('select')</h4>
+    <p>选择某一项时触发</p>
+    <table>
+        <thead>
+            <tr><th width="33%">属性</th><th width="33%">类型</th><th width="33%">描述</th></tr>
+        </thead>
+        <tbody>
+            
+                
+                <tr><td class="f-wsn"><code>sender</code></td><td class="f-wsn">object</td><td class="f-wsn">事件发送对象</td></tr>
+                
+                <tr><td class="f-wsn"><code>selected</code></td><td class="f-wsn">Item</td><td class="f-wsn">当前选择项</td></tr>
+                
+                <tr><td class="f-wsn"><code>value</code></td><td class="f-wsn">var</td><td class="f-wsn">当前选择值</td></tr>
+                
+            
+        </tbody>
+    </table>
+    
+    
+    <h4>selectField.$on('toggle')</h4>
+    <p>展开/收起时触发</p>
+    <table>
+        <thead>
+            <tr><th width="33%">属性</th><th width="33%">类型</th><th width="33%">描述</th></tr>
+        </thead>
+        <tbody>
+            
+                
+                <tr><td class="f-wsn"><code>sender</code></td><td class="f-wsn">object</td><td class="f-wsn">事件发送对象</td></tr>
+                
+                <tr><td class="f-wsn"><code>open</code></td><td class="f-wsn">boolean</td><td class="f-wsn">展开/收起状态</td></tr>
+                
+                <tr><td class="f-wsn"><code>direction</code></td><td class="f-wsn">string</td><td class="f-wsn">展开方向</td></tr>
+                
+            
+        </tbody>
+    </table>
+    
 
 <div id="j-events"></div>
 
@@ -283,7 +309,7 @@
 </div>
 </div></div><div class="g-ft">
     <footer class="m-footer">
-        <p><a href="https://regular-ui.github.io/" class="footer_logo"><img src="https://regular-ui.github.io/img/logo-v2.0-bg-48.png" /></p>
+        <p><a href="https://regular-ui.github.io/v0.2/" class="footer_logo"><img src="https://regular-ui.github.io/v0.2/img/logo-v2.0-bg-48.png" /></p>
         <p>
             <a href="https://github.com/regular-ui/regular-ui" target="_blank">GitHub</a> |
             <a href="https://github.com/regular-ui/regular-ui/issues" target="_blank">Issues</a> |
@@ -293,23 +319,10 @@
         <p>Licensed under <a href="https://github.com/regular-ui/regular-ui/blob/master/LICENSE" target="_blank">MIT license</a>.</p>
     </footer>
 </div>
-<script src="https://regular-ui.github.io/vendor/regular.min.js"></script>
+<script src="https://regular-ui.github.io/v0.2/vendor/polyfill.min.js"></script>
+<script src="https://regular-ui.github.io/v0.2/vendor/regular.min.js"></script>
 <script src="../js/index.js"></script>
-<script>
-var $$ = function(selector){return document.querySelectorAll(selector)};
-// 添加小标题链接
-$$('.m-article > h2, .m-article > h3').forEach(function($heading) {
-    $heading.innerHTML = '<a href="#' + $heading.id + '">' + $heading.innerText + '</a>';
-});
-// 在模板中添加console
-(function() {
-    var supr = RGUI.Component.prototype.config;
-    RGUI.Component.prototype.config = function() {
-        this.data.console = console;
-        return supr.call(this);
-    }
-})();
-</script>
+<script src="https://regular-ui.github.io/v0.2/js/helper.js"></script>
 <script>
 "use strict";
 
@@ -353,14 +366,21 @@ var index = 0;
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField value={value}>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>\n<div>当前选择值：{value + ''}</div>";
+    var template = "<selectField direction=\"bottom-left\">\n    <item>bottom-left</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>\n<selectField direction=\"top-left\">\n    <item>top-left</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField value={value}\n    on-toggle={console.log('on-toggle:', '$event.open:', $event.open)}\n    on-select={console.log('on-select:', '$event:', $event)}\n    on-change={console.log('on-change:', '$event.value:', $event.value)}>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>";
+    var template = "<selectField value={value}>\n    <item value=1>选项1</item>\n    <item value=2 selected>选项2</item>\n    <item value=3>选项3</item>\n</selectField>\n<span>当前选择值：{value}</span>\n<p></p>\n<a class=\"u-btn u-btn-info\" on-click={value = '1'}>选项第一项</a>\n<a class=\"u-btn u-btn-info\" on-click={value = '3'}>选项最后一项</a>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component && component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<selectField value={value}\n    on-toggle={console.log('on-toggle:', '$event.open:', $event.open)}\n    on-select={console.log('on-select:', '$event.value:', $event.value)}\n    on-change={console.log('on-change:', '$event.value:', $event.value)}>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
