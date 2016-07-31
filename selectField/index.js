@@ -29,14 +29,13 @@ const SelectField = ListView.extend({
             direction: 'bottom-left',
         }, this.data);
         this.supr();
-
+    },
         /**
          * @event change 选择值改变时触发
          * @property {object} sender 事件发送对象
          * @property {Item} selected 改变后的选择项
          * @property {var} value 改变后的选择值
          */
-    },
     /**
      * @protected
      * @override
@@ -64,7 +63,7 @@ const SelectField = ListView.extend({
         this.$refs.overlay.toggle(false);
     },
         /**
-         * @event toggle  展开/收起时触发
+         * @event toggle 展开/收起时触发
          * @property {object} sender 事件发送对象
          * @property {boolean} open 展开/收起状态
          * @property {string} direction 展开方向

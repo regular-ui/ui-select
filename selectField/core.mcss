@@ -11,10 +11,7 @@
         cursor: pointer;
         @extend .f-toe;
 
-        .u-icon {
-            position: absolute;
-            right: 10px;
-        }
+        &:after { position: absolute; }
     }
 
     .overlay_bd {

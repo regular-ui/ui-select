@@ -11,7 +11,7 @@
   "keywords": ["regular", "ui", "rgui", "select"],
   "tags": ["regular", "ui", "rgui", "select"],
   "dependencies": {
-    "rgui-ui-overlay": "0.2.0-alpha",
-    "rgui-ui-listview": "0.2.0-alpha"
+    "rgui-ui-listview": "^0.2.0-alpha",
+    "rgui-ui-overlay": "^0.2.0-alpha"
   }
 }

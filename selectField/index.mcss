@@ -15,6 +15,8 @@
         color: $field_color;
         $border: $field_border;
         $border-radius: $border-radius-base;
+
+        &:after { @extend .u-icon; right: 10px; }
     }
 
     .m-listView {
@@ -34,6 +36,10 @@
 .u-selectField.u-overlay-top-left,
 .u-selectField.u-overlay-top-center,
 .u-selectField.u-overlay-top-right {
+    .overlay_hd {
+        &:after { @extend .u-icon-caret-up:before; }
+    }
+
     .overlay_bd {
         margin-bottom: 2px;
     }
@@ -42,6 +48,10 @@
 .u-selectField.u-overlay-bottom-left,
 .u-selectField.u-overlay-bottom-center,
 .u-selectField.u-overlay-bottom-right {
+    .overlay_hd {
+        &:after { @extend .u-icon-caret-down:before; }
+    }
+
     .overlay_bd {
         margin-top: 2px;
     }
