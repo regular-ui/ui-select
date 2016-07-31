@@ -7,6 +7,7 @@ import template from './index.rgl';
  * @param {object}                  options.data                     =  绑定属性
  * @param {var}                     options.data.value              <=> 当前的选择值
  * @param {boolean=false}           options.data.open               <=> 当前为展开/收起状态
+ * @param {string='bottom-left'}    options.data.direction           => 展开方向
  * @param {boolean=false}           options.data.readonly            => 是否只读
  * @param {boolean=false}           options.data.disabled            => 是否禁用
  * @param {boolean=true}            options.data.visible             => 是否显示
@@ -25,6 +26,7 @@ const SelectField = ListView.extend({
             // @inherited _selected: undefined,
             // @inherited value: undefined,
             open: undefined,
+            direction: 'bottom-left',
         }, this.data);
         this.supr();
 
@@ -64,7 +66,8 @@ const SelectField = ListView.extend({
         /**
          * @event toggle  展开/收起时触发
          * @property {object} sender 事件发送对象
-         * @property {object} open 展开/收起状态
+         * @property {boolean} open 展开/收起状态
+         * @property {string} direction 展开方向
          */
 });
 

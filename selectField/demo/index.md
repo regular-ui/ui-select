@@ -99,6 +99,27 @@ var component = new RGUI.Component({
 });
 ```
 
+### 展开方向
+
+具体请参见[Overlay的展开方向](https://regular-ui.github.io/ui-overlay/overlay/index.html#展开方向)。
+
+<div class="m-example"></div>
+
+```xml
+<selectField direction="bottom-left">
+    <item>bottom-left</item>
+    <item>选项1</item>
+    <item>选项2</item>
+    <item>选项3</item>
+</selectField>
+<selectField direction="top-left">
+    <item>top-left</item>
+    <item>选项1</item>
+    <item>选项2</item>
+    <item>选项3</item>
+</selectField>
+```
+
 ### 数据绑定
 
 <div class="m-example"></div>
@@ -106,10 +127,13 @@ var component = new RGUI.Component({
 ```xml
 <selectField value={value}>
     <item value=1>选项1</item>
-    <item value=2>选项2</item>
-    <item value=3 selected>选项3</item>
+    <item value=2 selected>选项2</item>
+    <item value=3>选项3</item>
 </selectField>
-<div>当前选择值：{value + ''}</div>
+<span>当前选择值：{value}</span>
+<p></p>
+<a class="u-btn u-btn-info" on-click={value = '1'}>选项第一项</a>
+<a class="u-btn u-btn-info" on-click={value = '3'}>选项最后一项</a>
 ```
 
 ### 事件
@@ -121,7 +145,7 @@ var component = new RGUI.Component({
 ```xml
 <selectField value={value}
     on-toggle={console.log('on-toggle:', '$event.open:', $event.open)}
-    on-select={console.log('on-select:', '$event:', $event)}
+    on-select={console.log('on-select:', '$event.value:', $event.value)}
     on-change={console.log('on-change:', '$event.value:', $event.value)}>
     <item value=1>选项1</item>
     <item value=2>选项2</item>

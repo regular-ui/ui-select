@@ -17,11 +17,7 @@
         $border-radius: $border-radius-base;
     }
 
-    .overlay_bd {
-        margin-top: 2px;
-    }
-
-    .selectField_listView {
+    .m-listView {
         max-height: 200px;
     }
 }
@@ -32,5 +28,21 @@
         background: $field-disabled_background;
         $border: $field-disabled_border;
         color: $field-disabled_color;
+    }
+}
+
+.u-selectField.u-overlay-top-left,
+.u-selectField.u-overlay-top-center,
+.u-selectField.u-overlay-top-right {
+    .overlay_bd {
+        margin-bottom: 2px;
+    }
+}
+
+.u-selectField.u-overlay-bottom-left,
+.u-selectField.u-overlay-bottom-center,
+.u-selectField.u-overlay-bottom-right {
+    .overlay_bd {
+        margin-top: 2px;
     }
 }

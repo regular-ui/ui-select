@@ -1,10 +1,10 @@
-<overlay ref="overlay" class="u-selectField {class}" open={open} disabled={disabled} visible={visible} on-toggle="toggle">
+<overlay ref="overlay" class="u-selectField {class}" open={open} direction={direction} disabled={disabled} visible={visible} on-toggle="toggle">
     <overlay.head>
         {#if _selected}<span title={_selected.data.title}>{#inc _selected.$body}</span>{/if}
         <i class="u-icon u-icon-caret-down"></i>
     </overlay.head>
     <overlay.body>
-        <ul class="m-listView selectField_listView">
+        <ul class="m-listView">
             {#inc this.$body}
         </ul>
     </overlay.body>

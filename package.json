@@ -1,7 +1,7 @@
 {
   "name": "rgui-ui-select",
   "description": "Regular UI - SelectField",
-  "version": "0.2.0",
+  "version": "0.2.0-alpha",
   "author": "Rainfore <rainforest92@126.com>",
   "main": "./index.js",
   "repository": "regular-ui/ui-select",
@@ -11,7 +11,7 @@
   "keywords": ["regular", "ui", "rgui", "select"],
   "tags": ["regular", "ui", "rgui", "select"],
   "dependencies": {
-    "rgui-ui-overlay": "regular-ui/ui-overlay#master",
+    "rgui-ui-overlay": "0.2.0-alpha",
     "rgui-ui-listview": "0.2.0-alpha"
   }
 }
