@@ -1,4 +1,5 @@
 import { ListView } from 'rgui-ui-listview';
+import { Overlay } from 'rgui-ui-overlay';
 import template from './index.rgl';
 
 /**
