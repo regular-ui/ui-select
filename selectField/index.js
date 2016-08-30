@@ -22,13 +22,13 @@ const SelectField = ListView.extend({
      * @override
      */
     config() {
-        this.data = Object.assign({
+        this.defaults({
             // @inherited _list: [],
             // @inherited _selected: undefined,
             // @inherited value: undefined,
             open: undefined,
             direction: 'bottom-left',
-        }, this.data);
+        });
         this.supr();
     },
         /**
