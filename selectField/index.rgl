@@ -1,4 +1,4 @@
-<overlay ref="overlay" class="u-selectField {class}" open={open} direction={direction} disabled={disabled} visible={visible} on-toggle="toggle">
+<overlay ref="overlay" class="u-selectField {class}" open={open} direction={direction} readonly={readonly} disabled={disabled} visible={visible} on-toggle="toggle">
     <overlay.head>
         {#if _selected}<span title={_selected.data.title}>{#inc _selected.$body}</span>{/if}
     </overlay.head>

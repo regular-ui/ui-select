@@ -1,6 +1,8 @@
 ## 示例
 ### 基本形式
 
+默认会选择第一项。
+
 <div class="m-example"></div>
 
 ```xml
@@ -37,18 +39,24 @@
 </selectField>
 ```
 
-### 禁用某一项，禁用组件
+### 只读，禁用，禁用某一项
 
 <div class="m-example"></div>
 
 ```xml
-<selectField>
+<selectField readonly>
     <item>请选择</item>
     <item>选项1</item>
-    <item>选项2</item>
-    <item disabled>选项3（禁用）</item>
+    <item selected>选项2</item>
+    <item>选项3</item>
 </selectField>
 <selectField disabled>
+    <item>请选择</item>
+    <item>选项1</item>
+    <item selected>选项2</item>
+    <item>选项3</item>
+</selectField>
+<selectField>
     <item>请选择</item>
     <item>选项1</item>
     <item>选项2</item>
