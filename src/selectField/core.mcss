@@ -15,7 +15,6 @@
     }
 
     .overlay_bd {
-        clear: both;
         width: 100%;
     }
 

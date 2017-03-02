@@ -11,8 +11,8 @@
   "keywords": ["regular", "ui", "rgui", "select"],
   "tags": ["regular", "ui", "rgui", "select"],
   "dependencies": {
-    "rgui-ui-listview": "^0.2.0-alpha.1",
-    "rgui-ui-overlay": "^0.2.0-alpha.2"
+    "rgui-ui-listview": "^0.2.0",
+    "rgui-ui-overlay": "^0.2.0"
   },
   "peerDependencies": {
     "regularjs": "^0.4.3"

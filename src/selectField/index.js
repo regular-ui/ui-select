@@ -4,8 +4,8 @@ import template from './index.rgl';
 
 /**
  * @class SelectField
- * @extend ListView
- * @param {object}                  options.data                     =  绑定属性
+ * @extends ListView
+ * @param {Object}                  options.data                     =  绑定属性
  * @param {var}                     options.data.value              <=> 当前的选择值
  * @param {boolean=false}           options.data.open               <=> 当前为展开/收起状态
  * @param {string='bottom-left'}    options.data.direction           => 展开方向

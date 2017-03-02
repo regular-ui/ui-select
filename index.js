@@ -1,3 +1,3 @@
-import SelectField from './selectField';
+import SelectField from './src/selectField';
 
 export { SelectField };
