@@ -1,7 +1,7 @@
 {
   "name": "rgui-ui-select",
   "description": "Regular UI - SelectField",
-  "version": "0.2.0-alpha.1",
+  "version": "0.2.0",
   "author": "Rainfore <rainforest92@126.com>",
   "main": "./index.js",
   "repository": "regular-ui/ui-select",
