@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <link rel="icon" href="https://regular-ui.github.io/v0.2/img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="https://regular-ui.github.io/v0.2/img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://regular-ui.github.io/v0.2/css/doc.default.min.css">
+<link rel="stylesheet" href="https://regular-ui.github.io/v0.2/css/docs.default.min.css">
 <link rel="stylesheet" href="../css/index.css">
 <!--[if lt IE9]>
 <script>
@@ -37,6 +37,7 @@
         <h1>选择扩展<small> SelectField</small></h1>
         <h2 id="示例">示例</h2>
 <h3 id="基本形式">基本形式</h3>
+<p>默认会选择第一项。</p>
 <div class="m-example"></div>
 
 <pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
@@ -67,16 +68,22 @@
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">value</span>=<span class="cm-attribute">3</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
 </code></pre>
-<h3 id="禁用某一项，禁用组件">禁用某一项，禁用组件</h3>
+<h3 id="只读，禁用，禁用某一项">只读，禁用，禁用某一项</h3>
 <div class="m-example"></div>
 
-<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">readonly</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
-    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
-    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项3（禁用）<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
 <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span> <span class="cm-attribute">disabled</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span> <span class="cm-attribute">selected</span><span class="cm-tagcm-bracketcm-error">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">selectField</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>请选择<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
     <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>选项2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">item</span><span class="cm-tagcm-bracket">&gt;</span>
@@ -164,40 +171,42 @@
 
         <h2 id="API">API</h2>
 
-<h3 id="Class">Class</h3>
-<h4>SelectField</h4>
-<p>继承自<strong>ListView</strong>。</p>
-<p></p>
-<div id="j-class"></div>
 
-<h3 id="Options">Options</h3>
-<h4>new SelectField()</h4>
-<table>
-    <thead>
-        <tr><th width="24%">参数</th><th width="16%">类型</th><th width="16%">默认值</th><th width="18%">数据流向</th><th width="26%">描述</th></tr>
-    </thead>
-    <tbody>
-        
+    <h3 id="Class">Class</h3>
+    <h4>SelectField</h4>
+    <p>继承自<strong></strong>。</p>
+    <p></p>
+    <div id="j-class"></div>
+
+    <h3 id="Options">Options</h3>
+    <h4>new SelectField()</h4>
+    <table>
+        <thead>
+            <tr><th width="24%">参数</th><th width="16%">类型</th><th width="16%">默认值</th><th width="18%">数据流向</th><th width="26%">描述</th></tr>
+        </thead>
+        <tbody>
             
-            <tr><td class="f-wsn"><code>data</code></td><td class="f-wsn">object</td><td class="f-wsn"></td><td class="f-tac"></td><td>绑定属性</td></tr>
+                
+                <tr><td class="f-wsn"><code>data</code></td><td class="f-wsn">Object</td><td class="f-wsn"></td><td class="f-tac"></td><td>绑定属性</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.value</code></td><td class="f-wsn">var</td><td class="f-wsn"></td><td class="f-tac">outside &lt;=&gt; inside</td><td>当前的选择值</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.open</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside &lt;=&gt; inside</td><td>当前为展开/收起状态</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.direction</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;bottom-left&#39;</code></td><td class="f-tac">outside  =&gt; inside</td><td>展开方向</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.readonly</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否只读</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.disabled</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否禁用</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.visible</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>true</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否显示</td></tr>
+                
+                <tr><td class="f-wsn"><code>data.class</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;&#39;</code></td><td class="f-tac">outside  =&gt; inside</td><td>补充class</td></tr>
+                
             
-            <tr><td class="f-wsn"><code>data.value</code></td><td class="f-wsn">var</td><td class="f-wsn"></td><td class="f-tac">outside &lt;=&gt; inside</td><td>当前的选择值</td></tr>
-            
-            <tr><td class="f-wsn"><code>data.open</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside &lt;=&gt; inside</td><td>当前为展开/收起状态</td></tr>
-            
-            <tr><td class="f-wsn"><code>data.direction</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;bottom-left&#39;</code></td><td class="f-tac">outside  =&gt; inside</td><td>展开方向</td></tr>
-            
-            <tr><td class="f-wsn"><code>data.readonly</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否只读</td></tr>
-            
-            <tr><td class="f-wsn"><code>data.disabled</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>false</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否禁用</td></tr>
-            
-            <tr><td class="f-wsn"><code>data.visible</code></td><td class="f-wsn">boolean</td><td class="f-wsn"><code>true</code></td><td class="f-tac">outside  =&gt; inside</td><td>是否显示</td></tr>
-            
-            <tr><td class="f-wsn"><code>data.class</code></td><td class="f-wsn">string</td><td class="f-wsn"><code>&#39;&#39;</code></td><td class="f-tac">outside  =&gt; inside</td><td>补充class</td></tr>
-            
-        
-    </tbody>
-</table>
+        </tbody>
+    </table>
+
 <div id="j-options"></div>
 
 
@@ -328,28 +337,28 @@
 
 var index = 0;
 (function (index) {
-    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>\n<selectField>\n    <item>请选择</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>";
+    var template = "<selectField>\n    <item>\u9009\u98791</item>\n    <item>\u9009\u98792</item>\n    <item>\u9009\u98793</item>\n</selectField>\n<selectField>\n    <item>\u8BF7\u9009\u62E9</item>\n    <item>\u9009\u98791</item>\n    <item>\u9009\u98792</item>\n    <item>\u9009\u98793</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField value=2>\n    <item>请选择</item>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3>选项3</item>\n</selectField>\n<selectField>\n    <item>请选择</item>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>";
+    var template = "<selectField value=2>\n    <item>\u8BF7\u9009\u62E9</item>\n    <item value=1>\u9009\u98791</item>\n    <item value=2>\u9009\u98792</item>\n    <item value=3>\u9009\u98793</item>\n</selectField>\n<selectField>\n    <item>\u8BF7\u9009\u62E9</item>\n    <item value=1>\u9009\u98791</item>\n    <item value=2>\u9009\u98792</item>\n    <item value=3 selected>\u9009\u98793</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField>\n    <item>请选择</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>\n<selectField disabled>\n    <item>请选择</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item disabled>选项3（禁用）</item>\n</selectField>";
+    var template = "<selectField readonly>\n    <item>\u8BF7\u9009\u62E9</item>\n    <item>\u9009\u98791</item>\n    <item selected>\u9009\u98792</item>\n    <item>\u9009\u98793</item>\n</selectField>\n<selectField disabled>\n    <item>\u8BF7\u9009\u62E9</item>\n    <item>\u9009\u98791</item>\n    <item selected>\u9009\u98792</item>\n    <item>\u9009\u98793</item>\n</selectField>\n<selectField>\n    <item>\u8BF7\u9009\u62E9</item>\n    <item>\u9009\u98791</item>\n    <item>\u9009\u98792</item>\n    <item disabled>\u9009\u98793\uFF08\u7981\u7528\uFF09</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item divider />\n    <item disabled>选项3（禁用）</item>\n</selectField>";
+    var template = "<selectField>\n    <item>\u9009\u98791</item>\n    <item>\u9009\u98792</item>\n    <item divider />\n    <item disabled>\u9009\u98793\uFF08\u7981\u7528\uFF09</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
@@ -366,21 +375,21 @@ var index = 0;
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField direction=\"bottom-left\">\n    <item>bottom-left</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>\n<selectField direction=\"top-left\">\n    <item>top-left</item>\n    <item>选项1</item>\n    <item>选项2</item>\n    <item>选项3</item>\n</selectField>";
+    var template = "<selectField direction=\"bottom-left\">\n    <item>bottom-left</item>\n    <item>\u9009\u98791</item>\n    <item>\u9009\u98792</item>\n    <item>\u9009\u98793</item>\n</selectField>\n<selectField direction=\"top-left\">\n    <item>top-left</item>\n    <item>\u9009\u98791</item>\n    <item>\u9009\u98792</item>\n    <item>\u9009\u98793</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField value={value}>\n    <item value=1>选项1</item>\n    <item value=2 selected>选项2</item>\n    <item value=3>选项3</item>\n</selectField>\n<span>当前选择值：{value}</span>\n<p></p>\n<a class=\"u-btn u-btn-info\" on-click={value = '1'}>选项第一项</a>\n<a class=\"u-btn u-btn-info\" on-click={value = '3'}>选项最后一项</a>";
+    var template = "<selectField value={value}>\n    <item value=1>\u9009\u98791</item>\n    <item value=2 selected>\u9009\u98792</item>\n    <item value=3>\u9009\u98793</item>\n</selectField>\n<span>\u5F53\u524D\u9009\u62E9\u503C\uFF1A{value}</span>\n<p></p>\n<a class=\"u-btn u-btn-info\" on-click={value = '1'}>\u9009\u9879\u7B2C\u4E00\u9879</a>\n<a class=\"u-btn u-btn-info\" on-click={value = '3'}>\u9009\u9879\u6700\u540E\u4E00\u9879</a>";
     var component = new RGUI.Component({
         template: template
     });
     component && component.$inject($$(".m-example")[index]);
 })(index++);
 (function (index) {
-    var template = "<selectField value={value}\n    on-toggle={console.log('on-toggle:', '$event.open:', $event.open)}\n    on-select={console.log('on-select:', '$event.value:', $event.value)}\n    on-change={console.log('on-change:', '$event.value:', $event.value)}>\n    <item value=1>选项1</item>\n    <item value=2>选项2</item>\n    <item value=3 selected>选项3</item>\n</selectField>";
+    var template = "<selectField value={value}\n    on-toggle={console.log('on-toggle:', '$event.open:', $event.open)}\n    on-select={console.log('on-select:', '$event.value:', $event.value)}\n    on-change={console.log('on-change:', '$event.value:', $event.value)}>\n    <item value=1>\u9009\u98791</item>\n    <item value=2>\u9009\u98792</item>\n    <item value=3 selected>\u9009\u98793</item>\n</selectField>";
     var component = new RGUI.Component({
         template: template
     });
